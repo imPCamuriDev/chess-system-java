@@ -1,11 +1,12 @@
 package application;
 
+import boardgame.Board;
 import boardgame.Position;
 
 public class Project {
 	public static void main(String args[]) {
-		Position pos = new Position(3,5);
+		Board board = new Board(8,3);
 		
-		System.out.println(pos);
+		System.out.println(board.getColumns() + ", " + board.getRows());
 	}
 }
