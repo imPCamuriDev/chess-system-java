@@ -1,12 +1,12 @@
 package application;
 
-import boardgame.Board;
-import boardgame.Position;
+import chess.ChessMatch;
 
 public class Project {
 	public static void main(String args[]) {
-		Board board = new Board(8,3);
+		ChessMatch chessMatch = new ChessMatch();
 		
-		System.out.println(board.getColumns() + ", " + board.getRows());
+		UI.printBoard(chessMatch.getPieces());
+		
 	}
 }
