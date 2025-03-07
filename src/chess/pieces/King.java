@@ -18,7 +18,7 @@ public class King extends ChessPiece {
 
 	private boolean canMove(Position pos) {
 		ChessPiece p = (ChessPiece) getBoard().piece(pos);
-		return p != null || p.getColor() != getColor();
+		return p == null || p.getColor() != getColor();
 	}
 	
 	@Override
