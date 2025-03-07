@@ -51,6 +51,7 @@ public class Board {
 			throw new BoardException("I already had a piece in this position " + pos);
 		}
 		pieces[pos.getRow()][pos.getColumn()] = piece;
+		piece.pos = pos;
 	}
 
 	public Piece removePiece(Position pos) {
